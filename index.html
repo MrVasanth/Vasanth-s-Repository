@@ -263,3 +263,495 @@
             font-weight: 700;
             color: var(--primary-color);
             width: 60px;
+        }
+
+        .comp-title {
+            font-size: 1.5rem;
+            width: 30%;
+        }
+
+        .comp-desc {
+            flex: 1;
+            color: var(--text-muted);
+            font-size: 0.95rem;
+        }
+
+        .comp-icon {
+            font-size: 1.5rem;
+            margin-left: 20px;
+        }
+
+        /* --- Experience Section --- */
+        .experience {
+            padding: 80px 0;
+        }
+
+        .timeline-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+        }
+
+        .timeline-col-title {
+            font-size: 1.8rem;
+            margin-bottom: 30px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .timeline-col-title i {
+            color: var(--primary-color);
+        }
+
+        .timeline-item {
+            background: var(--bg-card);
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            border: 1px solid var(--border-color);
+            transition: 0.3s;
+        }
+
+        .timeline-item:hover {
+            border-color: var(--primary-color);
+            transform: translateY(-5px);
+        }
+
+        .timeline-date {
+            color: var(--primary-color);
+            font-size: 0.9rem;
+            font-weight: 500;
+            margin-bottom: 10px;
+        }
+
+        .timeline-title {
+            font-size: 1.3rem;
+            margin-bottom: 5px;
+        }
+
+        .timeline-company {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            margin-bottom: 15px;
+        }
+
+        .timeline-desc ul {
+            list-style-position: inside;
+            color: var(--text-muted);
+            font-size: 0.9rem;
+        }
+        
+        .timeline-desc li {
+            margin-bottom: 8px;
+        }
+
+        /* --- Skills Section --- */
+        .skills {
+            padding: 50px 0;
+            text-align: center;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+            gap: 20px;
+            margin-top: 40px;
+        }
+
+        .skill-box {
+            background: var(--bg-secondary);
+            padding: 30px 20px;
+            border-radius: 15px;
+            border: 1px solid var(--border-color);
+            transition: 0.3s;
+        }
+
+        .skill-box:hover {
+            border-color: var(--primary-color);
+            box-shadow: 0 5px 15px var(--primary-glow);
+        }
+
+        .skill-box i {
+            font-size: 2.5rem;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+        }
+
+        /* --- Contact Section --- */
+        .contact {
+            padding: 80px 0;
+            background: var(--bg-secondary);
+            border-top: 1px solid var(--border-color);
+        }
+
+        .contact-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 60px;
+        }
+
+        .contact-form {
+            background: var(--bg-card);
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-control {
+            width: 100%;
+            padding: 15px;
+            background: var(--bg-main);
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            color: white;
+            font-size: 1rem;
+        }
+
+        .form-control:focus {
+            outline: none;
+            border-color: var(--primary-color);
+        }
+
+        textarea.form-control {
+            height: 150px;
+            resize: none;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .info-item {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .info-icon {
+            width: 50px;
+            height: 50px;
+            background: var(--bg-card);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            font-size: 1.2rem;
+            border: 1px solid var(--border-color);
+        }
+
+        .info-details h4 {
+            margin-bottom: 5px;
+        }
+        
+        .info-details p {
+            color: var(--text-muted);
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 30px 0;
+            border-top: 1px solid var(--border-color);
+            color: var(--text-muted);
+        }
+
+        /* Responsive Design */
+        @media (max-width: 992px) {
+            .hero, .contact-wrapper {
+                flex-direction: column;
+            }
+            .hero-image {
+                justify-content: center;
+                margin-top: 40px;
+            }
+            .timeline-container {
+                grid-template-columns: 1fr;
+            }
+            .competency-item {
+                flex-direction: column;
+                text-align: center;
+            }
+            .comp-title {
+                width: 100%;
+                margin: 10px 0;
+            }
+            .comp-icon {
+                margin: 15px 0 0 0;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none; /* Add a hamburger menu in real app */
+            }
+            .stats {
+                flex-wrap: wrap;
+                gap: 30px;
+                justify-content: center;
+            }
+            .stat-item {
+                width: 45%;
+            }
+            .hero-title {
+                font-size: 2.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="logo">
+                <i class="fa-solid fa-chart-line" style="color: var(--primary-color);"></i>
+                Vasanthakumar<span>.</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#competencies">Competencies</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <a href="#contact" class="btn btn-primary">Hire me</a>
+        </nav>
+
+        <section class="hero" id="hero">
+            <div class="hero-content">
+                <p class="hero-greeting">I am Vasanthakumar P</p>
+                <h1 class="hero-title">Senior <span>Performance Marketer</span> & Pipeline Owner</h1>
+                <p class="hero-desc">
+                    I own paid acquisition budgets across EU, MENA, and India for multi-product SaaS portfolios. Operating at the intersection of paid media, CRO, and marketing ops—from ad click to revenue attribution.
+                </p>
+                <a href="#contact" class="btn btn-outline">Download CV <i class="fa-solid fa-download" style="margin-left: 8px;"></i></a>
+                
+                <div class="hero-socials">
+                    <a href="https://linkedin.com/in/vasanthakumar-p-profile" target="_blank" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+                    <a href="mailto:vasanthakumar6370@gmail.com" class="social-icon"><i class="fa-regular fa-envelope"></i></a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <img src="/api/placeholder/400/500" alt="Vasanthakumar P">
+            </div>
+        </section>
+
+        <section class="stats">
+            <div class="stat-item">
+                <div class="stat-number">$80K+</div>
+                <div class="stat-text">Monthly Budget Managed</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">$30M</div>
+                <div class="stat-text">ARR Portfolio Support</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">350%</div>
+                <div class="stat-text">QoQ Lead Growth</div>
+            </div>
+            <div class="stat-item">
+                <div class="stat-number">4+</div>
+                <div class="stat-text">Years of SaaS Exp</div>
+            </div>
+        </section>
+
+        <section class="competencies" id="competencies">
+            <h2 class="section-title">Core Competencies</h2>
+            <div class="competency-list">
+                
+                <div class="competency-item">
+                    <div class="comp-num">01</div>
+                    <div class="comp-title">Paid Acquisition</div>
+                    <div class="comp-desc">Google Ads (Search, Display), Bing Ads, LinkedIn Ads, PMax strategy, Audience segmentation, Budget scaling, and High-intent keyword structuring.</div>
+                    <div class="comp-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+                <div class="competency-item">
+                    <div class="comp-num">02</div>
+                    <div class="comp-title">Conversion Rate Opt.</div>
+                    <div class="comp-desc">Landing page experimentation, Funnel analysis (Click → Lead → Pipeline), Demo-first architectures, and A/B testing frameworks.</div>
+                    <div class="comp-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+                <div class="competency-item">
+                    <div class="comp-num">03</div>
+                    <div class="comp-title">Marketing Ops & Tracking</div>
+                    <div class="comp-desc">HubSpot CRM, Salesforce exposure, GA4, Google Tag Manager, Factors.ai, Zapier workflows, Looker Studio dashboards.</div>
+                    <div class="comp-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+                <div class="competency-item">
+                    <div class="comp-num">04</div>
+                    <div class="comp-title">Commercial Metrics</div>
+                    <div class="comp-desc">CAC, LTV, Payback Period tracking, Spend-to-Pipeline ratio, CVR optimization, and accurate Revenue forecasting.</div>
+                    <div class="comp-icon"><i class="fa-solid fa-arrow-right"></i></div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="experience" id="experience">
+            <div class="timeline-container">
+                
+                <div>
+                    <h3 class="timeline-col-title"><i class="fa-solid fa-briefcase"></i> Latest Experience</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2023 – Present</div>
+                        <div class="timeline-title">Senior Performance Marketer</div>
+                        <div class="timeline-company">SurveySparrow Inc.</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Own paid acquisition for 4 SaaS products across EU, MENA, and India ($80K/month budget).</li>
+                                <li>Rebuilt paid strategy around high-intent themes, doubling pipeline while maintaining a 3x spend-to-pipeline ratio.</li>
+                                <li>Drive $50K–$70K in monthly revenue from Google, LinkedIn, Bing, and Gartner Digital Markets.</li>
+                                <li>Launched SparrowGenie campaigns generating 10 qualified leads on a $4K test budget within month 1.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-date">2020 – 2021</div>
+                        <div class="timeline-title">Digital Marketing Trainee</div>
+                        <div class="timeline-company">ManageEngine – Zoho Corp</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Supported campaign optimization, keyword research, and global reporting.</li>
+                                <li>Assisted in CRO experiments on download pages to improve efficiency.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <h3 class="timeline-col-title"><i class="fa-solid fa-chart-pie"></i> Past Roles & Impact</h3>
+                    
+                    <div class="timeline-item">
+                        <div class="timeline-date">2021 – 2023</div>
+                        <div class="timeline-title">Digital Marketing Analyst</div>
+                        <div class="timeline-company">ManageEngine – Zoho Corp</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li>Managed enterprise SaaS SEM programs across US and UAE markets.</li>
+                                <li>Owned Google Ads and Bing Ads for ELA and Log360 in the US (~$30M ARR portfolio).</li>
+                                <li>Managed over $500K/quarter SEM spend and drove 350% QoQ lead growth in UAE for IDM and SIEM.</li>
+                                <li>Executed a year-end renewal mailer campaign generating $1M in recurring revenue.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item" style="border-color: var(--primary-color);">
+                        <div class="timeline-date">Revenue Impact</div>
+                        <div class="timeline-title">Monthly Paid Attribution</div>
+                        <div class="timeline-company">Current Metrics</div>
+                        <div class="timeline-desc">
+                            <ul>
+                                <li><strong>EU Market:</strong> $30K–$35K / month</li>
+                                <li><strong>MENA Market:</strong> $15K–$20K / month</li>
+                                <li><strong>India Market:</strong> $10K–$15K / month</li>
+                                <li><em>Maintains sub-9 month payback in EU/MENA.</em></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+        <section class="skills" id="skills">
+            <h2 class="section-title">My Tech Stack</h2>
+            <p style="color: var(--text-muted);">The tools and platforms I use to drive pipeline and revenue.</p>
+            
+            <div class="skills-grid">
+                <div class="skill-box">
+                    <i class="fa-brands fa-google"></i>
+                    <h4>Google Ads</h4>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-linkedin"></i>
+                    <h4>LinkedIn Ads</h4>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-hubspot"></i>
+                    <h4>HubSpot</h4>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-brands fa-salesforce"></i>
+                    <h4>Salesforce</h4>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-solid fa-chart-column"></i>
+                    <h4>GA4 / GTM</h4>
+                </div>
+                <div class="skill-box">
+                    <i class="fa-solid fa-magnifying-glass-chart"></i>
+                    <h4>Looker Studio</h4>
+                </div>
+            </div>
+        </section>
+
+    </div>
+
+    <section class="contact" id="contact">
+        <div class="container contact-wrapper">
+            
+            <div class="contact-form">
+                <h2 style="font-size: 2rem; margin-bottom: 20px;">Let's work together!</h2>
+                <p style="color: var(--text-muted); margin-bottom: 30px;">Looking to scale your SaaS pipeline? Let's connect.</p>
+                <form>
+                    <div class="form-group">
+                        <input type="text" class="form-control" placeholder="First name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" class="form-control" placeholder="Email address">
+                    </div>
+                    <div class="form-group">
+                        <textarea class="form-control" placeholder="Message"></textarea>
+                    </div>
+                    <button type="button" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+
+            <div class="contact-info">
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-phone"></i></div>
+                    <div class="info-details">
+                        <h4>Phone</h4>
+                        <p>+91 XXXXX XXXXX</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-envelope"></i></div>
+                    <div class="info-details">
+                        <h4>Email</h4>
+                        <p>vasanthakumar6370@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="info-item">
+                    <div class="info-icon"><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="info-details">
+                        <h4>Location</h4>
+                        <p>Puducherry, India</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Vasanthakumar P. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
