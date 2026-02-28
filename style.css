@@ -1,14 +1,109 @@
+/* Base Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 body {
-  font-family: Arial, sans-serif;
-  max-width: 900px;
-  margin: auto;
-  padding: 20px;
-}
-
-header, section, footer {
-  margin-bottom: 40px;
-}
-
-h1, h2 {
+  font-family: 'Arial', sans-serif;
+  line-height: 1.6;
+  background-color: #f9f9f9;
   color: #333;
+}
+
+/* Navbar */
+nav {
+  background: #ffffff;
+  padding: 15px 0;
+  box-shadow: 0px 2px 4px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+}
+
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav .nav-links li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav .nav-links a {
+  text-decoration: none;
+  color: #333;
+  font-weight: bold;
+}
+
+nav .logo {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+/* Sections */
+section {
+  padding: 60px 0;
+}
+
+.container {
+  width: 90%;
+  margin: auto;
+  max-width: 1000px;
+}
+
+/* Hero */
+#hero {
+  text-align: center;
+  background: #1e293b;
+  color: #fff;
+  padding: 100px 0;
+}
+
+#hero .btn-primary {
+  background: #ff6b6b;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 6px;
+  margin-top: 15px;
+}
+
+#hero .contact-info {
+  margin-top: 15px;
+}
+
+/* Headings */
+h2 {
+  margin-bottom: 15px;
+  color: #1e293b;
+}
+
+/* Skills */
+.skills-list {
+  list-style: none;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.skills-list li {
+  background: #e2e8f0;
+  padding: 10px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #fff;
+  margin-top: 30px;
+  font-size: 0.9rem;
+  color: #555;
 }
