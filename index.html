@@ -1,104 +1,265 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Vasanthakumar P — Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-</head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vasanthakumar P - Senior Performance Marketer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --bg-main: #0a0510;
+            --bg-secondary: #120b1c;
+            --bg-card: #1a1025;
+            --primary-color: #8a2be2;
+            --primary-glow: rgba(138, 43, 226, 0.4);
+            --text-light: #ffffff;
+            --text-muted: #a095b5;
+            --border-color: #2a1b3d;
+        }
 
-<body>
-  <!-- Navigation -->
-  <nav id="navbar">
-    <div class="container">
-      <a href="#hero" class="logo">Vasanthakumar P</a>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#skills">Skills</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
 
-  <!-- Hero/Banner Section -->
-  <section id="hero">
-    <div class="container hero-content">
-      <h1>Hi, I’m VASANTHAKUMAR P</h1>
-      <p>Senior Performance Marketer | Revenue & Pipeline Owner | Global SaaS Growth</p>
-      <p>Puducherry, India</p>
-      <a href="#contact" class="btn btn-primary">Hire Me</a>
+        body {
+            background-color: var(--bg-main);
+            color: var(--text-light);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
 
-      <div class="contact-info">
-        <p>Email: <a href="mailto:vasanthakumar6370@gmail.com">vasanthakumar6370@gmail.com</a></p>
-        <p>Phone: +91 XXXXX XXXXX</p>
-        <p>LinkedIn: <a href="https://linkedin.com/in/vasanthakumar-p-profile" target="_blank">linkedin.com/in/vasanthakumar-p-profile</a></p>
-      </div>
-    </div>
-  </section>
+        /* --- Typography & Utilities --- */
+        h1, h2, h3, h4 {
+            font-weight: 600;
+        }
+        
+        a {
+            text-decoration: none;
+            color: var(--text-light);
+            transition: 0.3s;
+        }
 
-  <!-- About Section -->
-  <section id="about">
-    <div class="container">
-      <h2>Professional Summary</h2>
-      <p>
-        Performance marketer owning paid acquisition budgets across EU, MENA, and India for multi-product SaaS portfolios. Currently managing $80K/month across Google, LinkedIn, Bing, and review platforms — with direct responsibility for pipeline, CAC, and payback periods...
-      </p>
-    </div>
-  </section>
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+        }
 
-  <!-- Experience Section -->
-  <section id="experience">
-    <div class="container">
-      <h2>Experience</h2>
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            border-radius: 30px;
+            font-weight: 500;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            border: 1px solid transparent;
+        }
 
-      <h3>Senior Performance Marketer</h3>
-      <p><strong>SurveySparrow Inc.</strong> | 2023 – Present</p>
-      <ul>
-        <li>Own paid acquisition for four SaaS products across multiple regions.</li>
-        <li>Rebuilt the paid acquisition strategy and doubled pipeline while maintaining efficiency.</li>
-        <!-- (Keep adding details as needed) -->
-      </ul>
+        .btn-primary {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: 0 4px 15px var(--primary-glow);
+        }
 
-      <h3>Digital Marketing Analyst</h3>
-      <p><strong>ManageEngine – Zoho Corp</strong> | 2021 – 2023</p>
-      <ul>
-        <li>Managed enterprise SEM programs and forecasted budgets across product lines.</li>
-        <li>Drove significant lead growth through keyword structuring.</li>
-      </ul>
+        .btn-primary:hover {
+            background: #761ed1;
+            box-shadow: 0 6px 20px var(--primary-glow);
+            transform: translateY(-2px);
+        }
 
-      <h3>Digital Marketing Analyst — Graduate Trainee</h3>
-      <p><strong>ManageEngine – Zoho Corp</strong> | 2020 – 2021</p>
-    </div>
-  </section>
+        .btn-outline {
+            background: transparent;
+            border-color: var(--primary-color);
+            color: var(--primary-color);
+        }
 
-  <!-- Skills Section -->
-  <section id="skills">
-    <div class="container">
-      <h2>Core Competencies</h2>
-      <ul class="skills-list">
-        <li>Google & Bing Ads</li>
-        <li>LinkedIn Ads & PMax Strategy</li>
-        <li>CRO, Landing Page Optimization</li>
-        <li>Marketing Operations & Analytics</li>
-        <li>Revenue Attribution Mapping</li>
-      </ul>
-    </div>
-  </section>
+        .btn-outline:hover {
+            background: var(--primary-color);
+            color: white;
+        }
 
-  <!-- Contact Section -->
-  <section id="contact">
-    <div class="container">
-      <h2>Get In Touch</h2>
-      <p>Email: <a href="mailto:vasanthakumar6370@gmail.com">vasanthakumar6370@gmail.com</a></p>
-      <p>Phone: +91 XXXXX XXXXX</p>
-    </div>
-  </section>
+        .section-title {
+            text-align: center;
+            font-size: 2.5rem;
+            margin-bottom: 50px;
+            background: linear-gradient(90deg, #fff, var(--primary-color));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
 
-  <footer>
-    <p>© 2026 Vasanthakumar P</p>
-  </footer>
-</body>
+        /* --- Navigation --- */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid var(--border-color);
+        }
 
-</html>
+        .logo {
+            font-size: 1.5rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .logo span { color: var(--primary-color); }
+
+        .nav-links {
+            display: flex;
+            list-style: none;
+            gap: 30px;
+        }
+
+        .nav-links a:hover {
+            color: var(--primary-color);
+        }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 80px 0;
+            gap: 50px;
+        }
+
+        .hero-content {
+            flex: 1;
+        }
+
+        .hero-greeting {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 10px;
+        }
+
+        .hero-title {
+            font-size: 3.5rem;
+            line-height: 1.2;
+            margin-bottom: 20px;
+        }
+
+        .hero-title span {
+            color: var(--primary-color);
+        }
+
+        .hero-desc {
+            color: var(--text-muted);
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            max-width: 600px;
+        }
+
+        .hero-socials {
+            display: flex;
+            gap: 15px;
+            margin-top: 30px;
+        }
+
+        .social-icon {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            border: 1px solid var(--primary-color);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--primary-color);
+            transition: 0.3s;
+        }
+
+        .social-icon:hover {
+            background: var(--primary-color);
+            color: white;
+            box-shadow: 0 0 15px var(--primary-glow);
+        }
+
+        .hero-image {
+            flex: 1;
+            display: flex;
+            justify-content: flex-end;
+            position: relative;
+        }
+
+        .hero-image img {
+            width: 100%;
+            max-width: 400px;
+            border-radius: 20px;
+            box-shadow: -20px 20px 0px -5px var(--primary-color);
+            /* Placeholder styling */
+            background-color: var(--bg-card);
+            min-height: 450px;
+            object-fit: cover;
+        }
+
+        /* --- Stats Section --- */
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            padding: 50px 0;
+            border-top: 1px solid var(--border-color);
+            border-bottom: 1px solid var(--border-color);
+            margin-bottom: 80px;
+        }
+
+        .stat-item {
+            text-align: center;
+        }
+
+        .stat-number {
+            font-size: 3rem;
+            font-weight: 700;
+            color: var(--text-light);
+            margin-bottom: 5px;
+        }
+
+        .stat-text {
+            color: var(--text-muted);
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        /* --- Competencies (Services) --- */
+        .competencies {
+            padding: 50px 0;
+        }
+
+        .competency-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .competency-item {
+            background: var(--bg-secondary);
+            padding: 30px;
+            border-radius: 10px;
+            display: flex;
+            align-items: center;
+            transition: 0.3s;
+            border: 1px solid var(--border-color);
+            cursor: pointer;
+        }
+
+        .competency-item:hover {
+            background: var(--primary-color);
+            border-color: var(--primary-color);
+            box-shadow: 0 10px 30px var(--primary-glow);
+        }
+
+        .competency-item:hover .comp-desc,
+        .competency-item:hover .comp-num {
+            color: white;
+        }
+
+        .comp-num {
+            font-size: 1.5rem;
+            font-weight: 700;
+            color: var(--primary-color);
+            width: 60px;
